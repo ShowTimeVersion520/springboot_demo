@@ -1,0 +1,24 @@
+server:
+  #服务器的端口号
+  port: 8081
+  #url前缀
+  context-path: /demo
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#自定义的属性
+hello: Welcome to dev
+content: content is ${hello}
+#封装成类
+gril:
+  age: 18
+  cupSize: B
